@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="music-player">
+    <audio id="audio" src="./music/song1.mp3"></audio>
+    
+    <img id="album-art" src="./img/itzy.jpeg" alt="Album Art" />
+    
+    <div class="progress-container">
+       <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="timestamp">
+      <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+    </div>
+
+    <div class="controls">
+      <img src="./img/previous.png" id="prev" alt="Previous" />
+      <img src="./img/play.png" id="play" alt="Play" />
+      <img src="./img/pause.png" id="pause" alt="Pause" style="display: none;" />
+      <img src="./img/next.png" id="next" alt="Next" />
+    </div>
+
+    <div class="title-container">
+      <p id="song-title">Kiss And Tell - Itzy</p>
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
